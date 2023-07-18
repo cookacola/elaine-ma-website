@@ -48,7 +48,7 @@ function Contact() {
 								type="text"
 								name="firstName"
 								id="firstName"
-								required="true"
+								required={true}
 								placeholder="Jane"
 								className="px-4 py-2 border border-gray-300 rounded-sm"
 							/>
@@ -62,7 +62,7 @@ function Contact() {
 								type="text"
 								name="lastName"
 								id="lastName"
-								required="true"
+								required={true}
 								placeholder="Doe"
 								className="px-4 py-2 border border-gray-300 rounded-sm"
 							/>
@@ -76,7 +76,7 @@ function Contact() {
 								type="text"
 								name="email"
 								id="email"
-								required="true"
+								required={true}
 								placeholder="address@email.com"
 								className="px-4 py-2 border border-gray-300 rounded-sm"
 							/>
@@ -103,7 +103,7 @@ function Contact() {
 						<textarea
 							name="message"
 							id="message"
-							required="true"
+							required={true}
 							placeholder="Your message here"
 							className="h-24 px-4 py-2 border border-gray-300 rounded-sm"
 						/>

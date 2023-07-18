@@ -151,3 +151,18 @@ export async function getContact() {
         }`
 	);
 }
+export async function getSlideshowOverlay() {
+	const client = createClient({
+		projectId: "oiu6t7er",
+		dataset: "production",
+		apiVersion: "2023-07-16",
+	});
+
+	return client.fetch(
+		groq`*[_type == "home"]{
+            _id,
+            _createdAt,
+            slideshowTitle
+        }`
+	);
+}
