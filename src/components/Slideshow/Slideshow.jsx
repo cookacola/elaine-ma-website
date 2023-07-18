@@ -88,7 +88,6 @@ export default function Slideshow() {
 						{slideshowImages[item]}
 					</animated.div>
 				))}
-				<SlideshowOverlay />
 				<div className="ticker"></div>
 				<animated.svg
 					width="40"
