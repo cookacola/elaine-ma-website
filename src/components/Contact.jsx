@@ -12,10 +12,10 @@ function Contact() {
 
 		emailjs
 			.sendForm(
-				`${process.env.SERVICE_ID}`,
-				`${process.env.TEMPLATE_ID}`,
+				"service_dqpb6ea",
+				"template_n1kn4kj",
 				form.current,
-				`${process.env.PUBLIC_KEY}`
+				"mxSEQsJqZm4GFbV41"
 			)
 			.then(
 				(result) => {
