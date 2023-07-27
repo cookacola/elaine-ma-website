@@ -10,3 +10,4 @@ function AboutPage() {
 }
 
 export default AboutPage;
+export const revalidate = 60;

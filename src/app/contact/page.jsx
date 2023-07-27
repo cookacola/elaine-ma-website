@@ -21,3 +21,4 @@ async function ContactPage() {
 }
 
 export default ContactPage;
+export const revalidate = 60;
