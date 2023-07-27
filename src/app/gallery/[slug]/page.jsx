@@ -27,7 +27,7 @@ export default async function Work({ params }) {
 				<h1>{work.name}</h1>
 				<h1>{work.medium}</h1>
 				<h1>
-					{work.width} {work.units} x {work.height} {work.units}
+					{work.width}x{work.height} {work.units}
 				</h1>
 				<h2>{work.year}</h2>
 				<h1>{work.status}</h1>
