@@ -29,6 +29,11 @@ const Works = {
 			title: "Height",
 		},
 		{
+			name: "units",
+			type: "string",
+			title: "Units",
+		},
+		{
 			name: "status",
 			type: "string",
 			title: "Status",

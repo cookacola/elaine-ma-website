@@ -39,6 +39,7 @@ export async function getWork(slug) {
             medium,
             width,
             height,
+            units,
             status,
             "slug": slug.current,
             "image": image.asset->url,
