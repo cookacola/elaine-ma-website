@@ -39,6 +39,11 @@ const Works = {
 			title: "Status",
 		},
 		{
+			name: "section",
+			type: "string",
+			title: "Section",
+		},
+		{
 			name: "featured",
 			type: "boolean",
 			title: "Featured",

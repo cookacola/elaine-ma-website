@@ -6,22 +6,25 @@ export default async function Gallery() {
 	const works = await getWorks();
 
 	// Group works by medium
-	const worksByMedium = works.reduce((acc, work) => {
-		const { medium } = work;
-		if (acc[medium]) {
-			acc[medium].push(work);
-		} else {
-			acc[medium] = [work];
+	const worksBySection = works.reduce((acc, work) => {
+		const { section } = work;
+		if (section) {
+			// Check if section exists
+			if (acc[section]) {
+				acc[section].push(work);
+			} else {
+				acc[section] = [work];
+			}
 		}
 		return acc;
 	}, {});
 
 	return (
 		<div className="mx-10">
-			{Object.entries(worksByMedium).map(([medium, works]) => (
-				<div key={medium}>
+			{Object.entries(worksBySection).map(([section, works]) => (
+				<div key={section}>
 					<h2 className="my-4 mb-10 text-2xl font-semibold text-center">
-						{medium}
+						{section}
 					</h2>
 					<div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3">
 						{works.map((work) => (

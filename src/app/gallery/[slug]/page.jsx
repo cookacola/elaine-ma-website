@@ -4,6 +4,10 @@ import Image from "next/image";
 import { getWork } from "../../../../sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({ weight: "400", subsets: ["latin"] });
+
 export default async function Work({ params }) {
 	const slug = params.slug;
 
@@ -31,7 +35,7 @@ export default async function Work({ params }) {
 				</h1>
 				<h2>{work.year}</h2>
 				<h1>{work.status}</h1>
-				<div className="mb-10 text-white">
+				<div className={`mb-10 text-white ${raleway.className}`}>
 					<PortableText value={work.content} />
 				</div>
 				<Link href="/gallery" className="mb-10">
