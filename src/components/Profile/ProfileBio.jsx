@@ -12,7 +12,7 @@ async function ProfileBio({ isHome }) {
 		<div className="flex flex-col justify-center w-1/2 bioSection">
 			<h2 className="mb-4 text-2xl font-bold">{profile.header}</h2>
 			<p
-				className={`${raleway.className} mb-4 text-base font-normal text-gray-100`}
+				className={`${raleway.className} mb-4 text-base font-normal text-gray-100 space-y-4`}
 			>
 				<PortableText value={profile.content} />
 			</p>

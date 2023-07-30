@@ -5,6 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 const cinzel = Cinzel({ subsets: ["latin"] });
 
+export const metadata = {
+	title: "Elaine Ma Fine Art",
+	description:
+		"Immerse yourself in the artistic world of Elaine Ma. Discover and explore a stunning collection of her art pieces that beautifully capture her unique blend of creativity and emotion. Stay connected, get in touch and be part of her journey.",
+};
+
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={cinzel.className}>
